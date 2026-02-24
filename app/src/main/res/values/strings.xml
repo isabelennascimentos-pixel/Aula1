@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Aula1</string>
+    <string name="btn_media">Calculate Average</string>
+    <string name="Teste">Test Label</string>
 </resources>
