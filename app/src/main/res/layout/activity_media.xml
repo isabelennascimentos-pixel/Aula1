@@ -39,10 +39,42 @@
         android:layout_weight="1"
         android:text="Aguardando Resultado" />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_weight="1" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/labelAlterarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_weight="1"
+        android:text="Alterar entre Layouts"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnLayoutMedia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/Teste" />
+        android:text="Média" />
+
+    <Button
+        android:id="@+id/btnLayoutCelsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Celsius" />
+
+    <Button
+        android:id="@+id/btnLayoutParImpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Par ou Ímpar" />
+
 </LinearLayout>
