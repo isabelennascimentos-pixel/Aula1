@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".IMCActivity" />
-        <activity android:name=".ParImparActivity" />
+
     </application>
 
 </manifest>
