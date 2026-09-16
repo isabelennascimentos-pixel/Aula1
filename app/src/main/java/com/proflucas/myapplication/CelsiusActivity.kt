@@ -16,7 +16,7 @@ class CelsiusActivity : ComponentActivity() {
 
         setContentView(R.layout.activity_celsius)
 
-        Toast.makeText(this, "Trocou para Celsius!", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Trocou para IMC!", Toast.LENGTH_SHORT).show()
 
         val txtCelsius = findViewById<EditText>(R.id.txtCelsius)
         val labelConversor = findViewById<TextView>(R.id.labelConversor)
@@ -47,15 +47,11 @@ class CelsiusActivity : ComponentActivity() {
         }
 
         val btnSwitchToMedia = findViewById<Button>(R.id.btnLayoutMedia)
-        val btnSwitchToParImpar = findViewById<Button>(R.id.btnLayoutParImpar)
 
         btnSwitchToMedia.setOnClickListener {
             switchToLayoutMedia()
         }
 
-        btnSwitchToParImpar.setOnClickListener {
-            startActivity(Intent(this, ParImparActivity::class.java))
-        }
     }
 
     private fun switchToLayoutMedia() {

@@ -21,7 +21,25 @@
         android:layout_height="66dp"
         android:layout_weight="1"
         android:ems="10"
-        android:hint="Digite a 1º Nota:"
+        android:hint="Digite a 2º Nota:"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtNota3"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Digite a 3º Nota:"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtNota4"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Digite a 4º Nota:"
         android:inputType="text" />
 
     <Button
@@ -38,11 +56,6 @@
         android:layout_height="66dp"
         android:layout_weight="1"
         android:text="Aguardando Resultado" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="157dp"
-        android:layout_weight="1" />
 
     <TextView
         android:id="@+id/labelAlterarLayout"
@@ -68,13 +81,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Celsius" />
-
-    <Button
-        android:id="@+id/btnLayoutParImpar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Par ou Ímpar" />
+        android:text="IMC" />
 
 </LinearLayout>
