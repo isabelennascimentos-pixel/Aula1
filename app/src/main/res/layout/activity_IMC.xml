@@ -7,24 +7,33 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/txtCelsius"
+        android:id="@+id/labelaltura"
         android:layout_width="match_parent"
         android:layout_height="66dp"
         android:layout_weight="1"
         android:ems="10"
-        android:hint="Temperatura em Celsius:"
+        android:hint="Dígite seu peso:"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/labelpeso"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Dígite sua altura:"
         android:inputType="text" />
 
     <Button
-        android:id="@+id/btnCalcularCelsius"
+        android:id="@+id/btnCalcularIMC"
         style="@android:style/Widget.Button"
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:layout_weight="1"
-        android:text="Converter para Fahrenheit"/>
+        android:text="Calcular IMC"/>
 
     <TextView
-        android:id="@+id/labelConversor"
+        android:id="@+id/txtIMC"
         android:layout_width="match_parent"
         android:layout_height="66dp"
         android:layout_weight="1"
@@ -32,7 +41,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="157dp"
+        android:layout_height="105dp"
         android:layout_weight="1" />
 
     <TextView
@@ -55,11 +64,11 @@
         android:text="Média" />
 
     <Button
-        android:id="@+id/btnLayoutCelsius"
+        android:id="@+id/btnLayoutIMC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Celsius" />
+        android:text="IMC" />
 
 
 </LinearLayout>

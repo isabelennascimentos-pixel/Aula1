@@ -77,7 +77,7 @@
         android:text="Média" />
 
     <Button
-        android:id="@+id/btnLayoutCelsius"
+        android:id="@+id/btnLayoutIMC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"

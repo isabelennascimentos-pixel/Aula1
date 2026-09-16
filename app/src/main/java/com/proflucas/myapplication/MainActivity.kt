@@ -7,11 +7,6 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.proflucas.myapplication.ui.theme.Aula1Theme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,15 +39,15 @@ class MainActivity : ComponentActivity() {
         }
 
         // Configurar o botão no layout media
-        val btnSwitchToCelsius = findViewById<Button>(R.id.btnLayoutCelsius)
+        val btnSwitchToIMC = findViewById<Button>(R.id.btnLayoutIMC)
 
-        btnSwitchToCelsius.setOnClickListener {
-            switchToLayoutCelsius()
+        btnSwitchToIMC.setOnClickListener {
+            switchToLayoutIMC()
         }
     }
 
-    private fun switchToLayoutCelsius() {
-        startActivity(Intent(this, CelsiusActivity::class.java))
+    private fun switchToLayoutIMC() {
+        startActivity(Intent(this, IMCActivity::class.java))
     }
 
 }

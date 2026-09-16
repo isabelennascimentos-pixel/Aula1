@@ -9,40 +9,41 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 
-class CelsiusActivity : ComponentActivity() {
+class IMCActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        setContentView(R.layout.activity_celsius)
+        setContentView(R.layout.activity_IMC)
 
         Toast.makeText(this, "Trocou para IMC!", Toast.LENGTH_SHORT).show()
 
-        val txtCelsius = findViewById<EditText>(R.id.txtCelsius)
-        val labelConversor = findViewById<TextView>(R.id.labelConversor)
-        val btnCalcularCelsius = findViewById<Button>(R.id.btnCalcularCelsius)
+        val labelpeso = findViewById<TextView>(R.id.labelpeso)
+        val labelaltura = findViewById<TextView>(R.id.labelaltura)
+        val btnCalcularIMC = findViewById<Button>(R.id.btnCalcularIMC)
+        val txtIMC = findViewById<TextView>(R.id.txtIMC)
 
-        btnCalcularCelsius.setOnClickListener {
+        btnCalcularIMC.setOnClickListener {
             // Pegar o texto do EditText
-            val input = txtCelsius.text.toString().trim()
+            val input = txtIMC.text.toString().trim()
 
             if (input.isEmpty()) {
-                Toast.makeText(this, "Digite uma temperatura!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Digite sua altura!", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
             try {
-                val celsius = input.toDouble()
+                val altura = input.toDouble()
 
                 // Fórmula: °F = (°C × 9/5) + 32
-                val fahrenheit = (celsius * 9.0 / 5.0) + 32.0
+                val fahrenheit = (IMC * 9.0 / 5.0) + 32.0
 
                 // Mostrar resultado com 1 casa decimal
-                labelConversor.text = String.format("Resultado: %.1f °F", fahrenheit)
+                labelaltura.text = String.format("Resultado: %.1f °F", fahrenheit)
 
             } catch (e: NumberFormatException) {
                 Toast.makeText(this, "Digite um número válido!", Toast.LENGTH_SHORT).show()
-                labelConversor.text = "Resultado: — °F"
+                labelaltura.text = "Resultado: — °F"
             }
         }
 
